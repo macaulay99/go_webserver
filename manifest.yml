@@ -1,0 +1,10 @@
+---
+applications:
+- name: go-web-server
+  instance: 1
+  memory: 8m
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git#v1.9.10
+  domain: cfapps.io
+  env:
+    GOVERSION: go1.14.1
+    GOPACKAGENAME: github.com/macaulay99/go_util
